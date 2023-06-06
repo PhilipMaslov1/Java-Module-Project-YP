@@ -40,7 +40,7 @@ public class ConsoleReader {
                 System.out.println("Введите стоимость в формате \"руб.коп\":");
             }
             price = scanner.nextDouble();
-            if (price <= 0) {
+            if (Calculator.roundDouble(price) <= 0) {
                 System.err.println("Стоимость должна быть больше нуля.");
             } else {
                 return Calculator.roundDouble(price);
